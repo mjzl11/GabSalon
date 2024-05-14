@@ -8,9 +8,9 @@ const env = process.env
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-/*app.use(express.static(path.join(__dirname, 'public'), {
-    maxAge: 6 * 30 * 24 * 60 * 60 //6 month
-}));*/
+app.use(express.static(path.join(__dirname, 'public'), {
+    maxAge: 365 * 24 * 60 * 60 * 1000 
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/logic', express.static(path.join(__dirname, 'logic')));
 
