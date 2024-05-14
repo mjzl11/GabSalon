@@ -32,10 +32,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    padding: 3%;
 }
 
 .about-review {
-    width: 70%;
+    width: 100%;
     background-color: rgb(255, 255, 255);
     padding: 10px;
     margin: 1vh;
