@@ -1,0 +1,23 @@
+
+<html lang="<%- language.currentLanguage %>">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/footer.css">
+        <script type="text/javascript" src="/logic/client/languagePiker.js"></script>
+    </head>
+    <body>
+        <footer>
+            <div>
+                <select id="language" onchange="changeLanguage()" aria-label="Seleccionar idioma">
+                    <option value="es">es</option>
+                    <option value="en">en</option>
+                    <option value="cat">cat</option>
+                    <option value="ro">ro</option>
+                </select>
+            </div>
+            <a href="/?language=<%- language.curentLanguage %>"><img class="footer-icon" src="/img/home.png" alt="nav info icon"></a>
+            <a href="/about?language=<%- language.curentLanguage %>"><img class="footer-icon" src="/img/info.png" alt="nav info icon"></a>
+        </footer>
+    </body>
+</html>

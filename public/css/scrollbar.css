@@ -1,0 +1,27 @@
+/* Personaliza toda la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 12px; /* ancho de la barra de desplazamiento vertical */
+    height: 12px; /* altura de la barra de desplazamiento horizontal */
+}
+
+/* Personaliza el botón (arriba y abajo en la barra vertical) */
+::-webkit-scrollbar-button {
+    background-color: #3d3d3d; /* Color de fondo */
+}
+
+/* Personaliza el área de track (la pista por la que se desliza el thumb) */
+::-webkit-scrollbar-track {
+    background: #1d1d1d; /* Color de fondo del track */
+}
+
+/* Personaliza el thumb (la parte móvil que deslizas) */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 241, 160); /* Color de fondo del thumb */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 3px solid #1d1d1d; /* Borde con espacio */
+}
+
+/* Personaliza el estado hover del thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(255, 241, 160); /* Cambiar color al pasar el ratón */
+}

@@ -1,0 +1,54 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    height: 6vh;
+    background-color: black; 
+    text-align: center; 
+    border-top: solid 1px rgb(255, 234, 113) ;
+}
+
+
+
+#language {
+    color:  rgb(228, 228, 228);
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border-width: 2px;
+    background-color: black;
+    text-align: center;
+    font-size: 9px;        
+    outline: none;         
+    -webkit-appearance: none;       
+    -moz-appearance: none;        
+    appearance: none;               
+    cursor: pointer;
+    font-family: MontserratBold;
+    width: 4vh;
+    height: 3.6vh;
+}
+
+.footer-center{
+    text-align: center;
+}
+
+.footer-icon{
+    height: 4vh;
+    width: 4vh;
+    cursor: pointer;
+}
+
+@media (orientation: landscape) {
+    .footer-text {
+        font-size: 0.8vw;
+    }
+}
+
+@media (orientation: portrait) {
+    .footer-text {
+        font-size: 1.3vh;
+    }
+}

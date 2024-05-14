@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="<%- language.currentLanguage %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/cookies.css">
+    <link rel="stylesheet" type="text/css" href="/css/scrollbar.css">
+</head>
+<body>
+    <div class="cookie-background">
+    <div class="cookie-center">
+    <div class="cookie-banner">
+        <div class="cookie-content">
+            <h3 class="title"><%- language.cookies.policyCookies %></h3>
+            <p class="text"><%- language.cookies.policyCookiesText %></p>
+            <h3 class="title"><%- language.cookies.cookiesAre %></h3>
+            <p class="text"><%- language.cookies.cookiesAreText %></p>
+            <h3 class="title"><%- language.cookies.cookiesUse %></h3>
+            <p class="text"><%- language.cookies.cookiesUseText %></p>
+            <h3 class="title"><%- language.cookies.options %></h3>
+            <p class="text"><%- language.cookies.optionsText %></p>
+            <p class="text"><%- language.cookies.optionsText2 %><a href="<%- language.cookiesPageLink %>" target="_blank" rel="noopener noreferrer"><%- language.cookies.aboutCookiesLink %></a></p>
+            <h3 class="title"><%- language.cookies.moreInfo %></h3>
+            <p class="text"><%- language.cookies.moreInfoText %><a href="privacyPolicy?language=<%- language.currentLanguage %>"><%- language.cookies.policyPrivacyLink %></a></p>
+            <p class="text"><%- language.cookies.moreInfoText2 %></p>
+        </div>
+    </div>
+    <div class="cookie-button-container">
+        <button class="cookie-accept" onclick="createAcceptCookie()"><%- language.cookies.accept %></button>
+    </div>
+</div>
+</div>
+</body>
+</html>

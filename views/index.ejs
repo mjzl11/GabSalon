@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="<%- language.currentLanguage %>">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%- language.home.meta %>">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="GabSalon">
+    <meta property="og:description" content="language.home.meta">
+    <meta property="og:image" content="/img/GabSalon.png">
+    <meta property="og:image:alt" content="profile photo">
+
+    <link rel="canonical" href=""> <!--pagina web principal-->
+
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/css/home.css" rel="stylesheet" type="text/css">
+    <title><%- language.pageName %></title>
+    <script type="text/javascript" src="/logic/client/language.js"></script>
+    <script type="text/javascript" src="/logic/client/cookiesBanner.js"></script>
+    <script type="text/javascript" src="/logic/client/openWhatsapp.js"></script>
+</head>
+
+<body>
+    <%- include('partials/cookieBanner') %>
+        <%- include('partials/navbar') %>
+            <div class="home-container">
+                <div style="cursor: pointer;" class="home-card" onclick="openWhatsApp('<%- language.phone %>')">
+                    <div class="home-sub">
+                        <h2 class="home-profile-title"><%- language.owner %></h2>
+                        <img src="/img/profile.png" alt="profile image" class="home-profile-image">
+                        <p class="home-cursive-text">"<%- language.home.profileText %>"</p>
+                        <div class="home-phone-div">
+                            <img src="/img/phone.png" alt="Phone icon" class="home-phone-img">
+                            <h6 class="home-phone-text"><%- language.home.textUs %></h6>
+                        </div>
+                        <span class="home-line"></span>
+                    </div>
+                </div>
+                <div class="home-card">
+                    <div class="home-sub">
+                        <h2 class="home-profile-title"><%- language.home.schedule %></h2>
+                        <div class="home-center-div">
+                            <ul class="home-schedule-container">
+                                <li class="home-normal-text"><%- language.home.Monday %></li>
+                                <li class="home-normal-text"><%- language.home.Tuesday %></li>
+                                <li class="home-normal-text"><%- language.home.Wednesday %></li>
+                                <li class="home-normal-text"><%- language.home.Thursday %></li>
+                                <li class="home-normal-text"><%- language.home.Friday %></li>
+                                <li class="home-normal-text"><%- language.home.Saturday %></li>
+                            </ul>
+                        </div>
+                        <span class="home-line"></span>
+                    </div>
+
+                </div>
+                <div class="home-card">
+                    <div class="home-sub">
+                        <h2 class="home-profile-title"><%- language.home.contact %></h2>
+                        <ul class="home-contact-list">
+                            <li>
+                                <a class="home-container-contact" href="mailto:gabsalonn@algo.com">
+                                    <img src="/img/email.png" alt="Email icon" class="home-round-img">
+                                    <p class="home-normal-text"><%- language.email %></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="home-container-contact" href="https://www.tiktok.com/@gabsalonn"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <img src="/img/tiktok.png" alt="TikTok icon" class="home-round-img">
+                                    <p class="home-normal-text"><%- language.tikTok %></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="home-container-contact" href="https://www.instagram.com/gabsalonn/"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <img src="/img/instagram.png" alt="Instagram icon" class="home-round-img">
+                                    <p class="home-normal-text"><%- language.instagram %></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="home-container-contact"
+                                    href="https://www.google.com/maps/place/Gab+Salon/@40.6343816,0.2833652,18.5z/data=!4m6!3m5!1s0x12a08bd95edd7a23:0x137ac09cc9c0aed1!8m2!3d40.6343587!4d0.2833371!16s%2Fg%2F11thk_2xf2?hl=es-ES&entry=ttu"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <img src="/img/location.png" alt="Location icon" class="home-round-img">
+                                    <p class="home-normal-text"><%- language.address %></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="home-line"></span>
+                    </div>
+                </div>
+            </div>
+            <%- include('partials/footer') %>
+</body>
+
+</html>

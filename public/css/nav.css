@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    background-color: black;
+    border-bottom: solid 1px rgb(255, 234, 113) ;
+}
+
+.navImage {
+    height: 12vh;
+    width: 26vh;
+}

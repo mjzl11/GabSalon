@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="<%- language.currentLanguage %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%- language.policyPrivacy.meta %>">
+    <title><%- language.policyPrivacy.policyPrivacy %> | <%- language.pageName %></title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/privacyPolicy.css">
+    <script type="text/javascript" src="/logic/client/language.js"></script>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <main class="privacy-container">
+        <div class="header">
+        <h2><%- language.policyPrivacy.policyPrivacy %></h2>
+        </div>
+
+        <div class="privacy-content">
+        <section class="privacy-section">
+            <h3 class="privacy-subTitle"><%- language.policyPrivacy.copiledInfo %></h3>
+            <ul class="policy-list">
+                <li class="policy-list-content"><%- language.policyPrivacy.info1 %></li>
+                <li class="policy-list-content"><%- language.policyPrivacy.info2 %></li>
+            </ul>
+        </section>
+
+        <section  class="privacy-section">
+            <h3 class="privacy-subTitle"><%- language.policyPrivacy.useOfInfo %></h3>
+            <ul class="policy-list">
+                <li class="policy-list-content"><%- language.policyPrivacy.use1 %></li>
+                <li class="policy-list-content"><%- language.policyPrivacy.use2 %></li>
+                <li class="policy-list-content"><%- language.policyPrivacy.use3 %></li>
+                <li class="policy-list-content"><%- language.policyPrivacy.use4 %></li>
+            </ul>
+        </section>
+
+        <section  class="privacy-section">
+            <h3 class="privacy-subTitle"><%- language.policyPrivacy.shareInfo %></h3>
+            <p class="policy-text"><%- language.policyPrivacy.shareInfoText %></p>
+        </section>
+
+        <section  class="privacy-section">
+            <h3 class="privacy-subTitle"><%- language.policyPrivacy.securityInfo %></h3>
+            <p class="policy-text"><%- language.policyPrivacy.securityInfoText %></p>
+        </section>
+
+        <section  class="privacy-section">
+            <h3 class="privacy-subTitle"><%- language.policyPrivacy.pivacyRights %></h3>
+            <p class="policy-text"><%- language.policyPrivacy.privacyRightsText %></p>
+        </section>
+
+        <section  class="privacy-section">
+            <h3 class="privacy-subTitle"><%- language.policyPrivacy.contact %></h3>
+            <p class="policy-text"><%- language.policyPrivacy.contactText %></p>
+            <ul class="policy-list">
+                <li class="policy-list-content"><%- language.policyPrivacy.email %></li>
+                <li class="policy-list-content"><%- language.policyPrivacy.address %></li>
+        </ul>
+        </section>
+    </div>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

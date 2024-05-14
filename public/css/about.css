@@ -1,0 +1,76 @@
+
+.about-page {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+}
+
+.about-section {
+    padding-bottom: 10vh;
+    width: 80%;
+}
+
+.about-container{
+    margin-bottom: 4vh;
+    border-bottom: 1px solid rgb(255, 234, 113);
+    padding-bottom: 0.5vh;
+}
+
+.about-title{
+    font-family: LoraTitle;
+    font-size: 18px;
+}
+
+.customer-reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.about-review {
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 1vh;
+    color: black;
+}
+
+.about-comment{
+    font-size: 13px;
+    font-family: MontserratItalic;
+}
+
+.about-text{
+    margin-top: 1vh;
+    font-size: 14px;
+}
+
+.about-name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.about-link {
+    color: rgb(54, 114, 243); 
+    text-decoration: none; 
+}
+
+.about-link:hover {
+    text-decoration: underline; 
+}
+
+@media (orientation: landscape) {
+    .about-section {
+        padding-bottom: 10vh;
+        width: 50%;
+    }
+}

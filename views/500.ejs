@@ -1,0 +1,21 @@
+<!-- views/500.ejs -->
+<!DOCTYPE html>
+<html lang="<%- language.currentLanguage %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%- language.errors.meta2 %>">
+    <title><%- language.errors.error2 %></title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/error.css">
+    <script type="text/javascript" src="/logic/client/language.js"></script>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <main class="container-error">
+    <h2 class="title-error"><%- language.errors.error2 %></h2>
+    <p class="text-error"><%- language.errors.error2Text %></p>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

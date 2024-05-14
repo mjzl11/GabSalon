@@ -1,0 +1,194 @@
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 255vh;
+    width: 100%;
+    padding-top: 22vh;
+    padding-bottom: 2vh;
+    background-color: black;
+}
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 10vh;
+    background-image: url('/img/background.png');
+    background-size: cover;
+}
+
+.home-sub {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-contact-list {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-center-div{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-schedule-container{
+ height: 100%;
+ width: 60%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.home-container-contact {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    color: inherit;
+    cursor: pointer;
+}
+
+.home-phone-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.home-line{
+    width: 70%;
+    border-bottom: 1px solid black;
+}
+
+@media (orientation: landscape) {
+    .home-container {
+        flex-direction: row;
+        justify-content: space-around; 
+        height: 100vh;
+    }
+
+    .home-card {
+        width: 22vw;
+        height: 58vh;
+    }
+
+    .home-phone-text{
+        font-family: LoraTitle;
+        font-size: 1.2vw;
+    }
+
+    .home-profile-title {
+        width: 70%;
+        border-bottom: 1px solid black;
+        font-family: LoraTitle;
+        font-size: 1.8vw;
+        text-align: center;
+        padding-bottom: 1vh;
+    }
+
+    .home-normal-text{
+        font-size: 1vw;
+        padding-left: 0.6vw;
+        font-family: Montserrat;
+    }
+
+    .home-cursive-text{
+        font-size: 0.9vw;
+        padding: 6vh;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+        text-align: center;
+        font-family: MontserratItalic;
+    }
+
+    .home-round-img {
+        border-radius: 50%; 
+        width: 2vw; 
+        height: 2vw; 
+        margin-right: 0.5vw;
+    }
+    .home-phone-img{
+        border-radius: 50%; 
+        margin-right: 0.5vw;
+        width: 2vw; 
+        height: 2vw; 
+    }
+    .home-profile-image {
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+        border-radius: 50%; 
+        width: 6vw; 
+        height: 6vw; 
+    }
+}
+
+@media (orientation: portrait) {
+    .home-card {
+        width: 80vw;
+        height: 200vh;
+    }
+   
+    .home-phone-text{
+        font-family: LoraTitle;
+        font-size: 3vh;
+    }
+
+    .phone-div{
+        margin-bottom: 2vh;
+    }
+
+    .home-profile-title {
+        width: 70%;
+        border-bottom: 1px solid black;
+        font-family: LoraTitle;
+        font-size: 4vh;
+        text-align: center;
+        padding-bottom: 1vh;
+    }
+
+    .home-normal-text{
+        font-size: 2vh;
+        font-family: Montserrat;
+    }
+
+    .home-cursive-text{
+        font-size: 1.8vh;
+        padding: 10vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        text-align: center;
+        font-family: MontserratItalic;
+    }
+    .home-round-img {
+        border-radius: 50%; 
+        width: 4vh; 
+        height: 4vh; 
+        margin-right: 0.5vh;
+    }
+    .home-phone-img{
+        border-radius: 50%; 
+        width: 4vh; 
+        height: 4vh; 
+    }
+    .home-profile-image {
+        margin-top: 2vh;
+        border-radius: 50%; 
+        width: 20vh; 
+        height: 20vh; 
+    }
+}

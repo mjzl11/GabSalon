@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="<%- language.currentLanguage %>">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%- language.about.meta %>">
+    <title><%- language.about.title %> | <%- language.pageName %></title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <script type="text/javascript" src="/logic/client/language.js"></script>
+    <script type="text/javascript" src="/logic/client/cookiesBanner.js"></script>
+</head>
+
+<body>
+    <%- include('partials/cookieBanner') %>
+        <%- include('partials/navbar') %>
+            <main class="about-page">
+                <section class="about-section">
+                    <div class="about-container">
+                        <h2 class="about-title"><%- language.about.about %> <%- language.pageName %></h2>
+                        <p class="about-text"><%- language.about.aboutText %></p>
+                    </div>
+                    <div class="about-container">
+                        <h2 class="about-title"><%- language.about.address %></h2>
+                        <p class="about-text"><%- language.about.addressText %></p>
+                    </div>
+                    <div class="about-container">
+                        <h2 class="about-title"><%- language.about.customersComments %></h2>
+                        <div class="customer-reviews">
+                            <div class="about-review">
+                                <p class="about-comment">"<%- language.about.review1 %>"</p>
+                                <div class="about-name-container">
+                                    <p class="about-comment">- <%- language.about.name1 %></p>
+                                    <p class="about-text"><%- language.about.star1 %>⭐</p>
+                                </div>
+                            </div>
+                            <div class="about-review">
+                                <p class="about-comment">"<%- language.about.review2 %>"</p>
+                                <div class="about-name-container">
+                                    <p class="about-comment">- <%- language.about.name2 %></p>
+                                    <p class="about-text"><%- language.about.star2 %>⭐</p>
+                                </div>
+                            </div>
+                            <div class="about-review">
+                                <p class="about-comment">"<%- language.about.review3 %>"</p>
+                                <div class="about-name-container">
+                                    <p class="about-comment">- <%- language.about.name3 %></p>
+                                    <p class="about-text"> <%- language.about.star3 %>⭐</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-container">
+                        <h2 class="about-title"><%- language.about.cookies %></h2>
+                        <p class="about-text"><%- language.about.cookiesText %><a class="about-link" href="/privacyPolicy?language=<%- language.currentLanguage %>"> <%- language.about.policyPrivacy %></a> <%- language.about.or %> <a class="about-link" href="#" onclick="deleteAcceptCookie()"><%- language.about.manageCookies %></a></p>
+                    </div>
+                </section>
+            </main>
+            <%- include('partials/footer') %>
+</body>
+
+</html>

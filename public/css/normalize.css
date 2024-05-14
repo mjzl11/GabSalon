@@ -1,0 +1,33 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: MontserratItalic;
+    src: url('../fonts/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: LoraTitle;
+    src: url('../fonts/Lora-BoldItalic.ttf') format('truetype');
+}
+
+body {
+    font-family: Montserrat; 
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none; 
+}
