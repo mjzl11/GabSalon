@@ -11,24 +11,63 @@ footer {
     border-top: solid 1px rgb(255, 234, 113) ;
 }
 
+.language-options-container{
+    z-index: 20;
+    position: fixed;
+    top: 10vh; 
+    left: 30vw; 
+    height: 80vh;
+    width: 40vw;
+    background-color: rgb(255, 255, 255);
+    padding: 10%;
+}
 
+.language-picker-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+    justify-content: space-between;
+    height: 60%;
+    width: 90%;
+}
 
-#language {
-    color:  rgb(228, 228, 228);
-    border-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    border-width: 2px;
-    background-color: black;
-    text-align: center;
-    font-size: 9px;        
-    outline: none;         
-    -webkit-appearance: none;       
-    -moz-appearance: none;        
-    appearance: none;               
+.language-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     cursor: pointer;
-    font-family: MontserratBold;
-    width: 4vh;
-    height: 3.6vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.language-option .checkmark {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s;
+}
+
+.language-option.selected .checkmark {
+    background-color: blue;
+    border-color: blue;
+}
+
+.checkmark {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.checkmark.checked {
+    background-color: #007bff;
+    border-color: #007bff;
 }
 
 .footer-center{

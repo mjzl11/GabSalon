@@ -1,21 +1,37 @@
 
 <html lang="<%- language.currentLanguage %>">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/footer.css">
         <script type="text/javascript" src="/logic/client/languagePiker.js"></script>
     </head>
     <body>
-        <footer>
-            <div>
-                <select id="language" onchange="changeLanguage()" aria-label="Seleccionar idioma">
-                    <option value="es">es</option>
-                    <option value="en">en</option>
-                    <option value="cat">cat</option>
-                    <option value="ro">ro</option>
-                </select>
+
+        <div class="language-options-container" style="display: none;">
+            <h2>Selecciona Tu Idioma</h2>
+            <div class="language-picker-container">
+                <div class="language-option" data-lang="es" onclick="selectLanguage('es')">
+                    <span>Español</span>
+                    <span class="checkmark"></span>
+                </div>
+                <div class="language-option" data-lang="en" onclick="selectLanguage('en')">
+                    <span>Inglés</span>
+                    <span class="checkmark"></span>
+                </div>
+                <div class="language-option" data-lang="cat" onclick="selectLanguage('cat')">
+                    <span>Catalán</span>
+                    <span class="checkmark"></span>
+                </div>
+                <div class="language-option" data-lang="ro" onclick="selectLanguage('ro')">
+                    <span>Rumano</span>
+                    <span class="checkmark"></span>
+                </div>
             </div>
+            </select>
+        </div>
+
+
+        <footer>
+            <img class="footer-icon" src="/img/language.png" alt="nav language icon" onclick="openLanguageBox()"></img>
             <a href="/?language=<%- language.curentLanguage %>"><img class="footer-icon" src="/img/home.png" alt="nav info icon"></a>
             <a href="/about?language=<%- language.curentLanguage %>"><img class="footer-icon" src="/img/info.png" alt="nav info icon"></a>
         </footer>
