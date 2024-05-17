@@ -1,7 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: fixed; 
     bottom: 0; 
     width: 100%; 
@@ -15,26 +27,39 @@ footer {
     z-index: 20;
     position: fixed;
     top: 10vh; 
-    left: 30vw; 
+    left: 10vw; 
     height: 80vh;
-    width: 40vw;
+    width: 80vw;
     background-color: rgb(255, 255, 255);
     padding: 10%;
 }
 
 .language-picker-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 6vh;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 60%;
     width: 90%;
 }
 
 .language-option {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     cursor: pointer;
     padding: 10px;
     border: 1px solid #ccc;
@@ -48,6 +73,8 @@ footer {
     border-radius: 50%;
     margin-left: 10px;
     border: 2px solid #ccc;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
