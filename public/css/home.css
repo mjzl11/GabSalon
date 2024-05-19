@@ -22,9 +22,9 @@
             align-items: center;
     height: 255vh;
     width: 100%;
-    padding-top: 22vh;
+    padding-top: 10vh;
     padding-bottom: 2vh;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .home-card {
@@ -77,6 +77,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+            padding-left: 2vw;
 }
 
 .home-center-div{
@@ -110,6 +111,7 @@
  -webkit-box-pack: justify;
      -ms-flex-pack: justify;
          justify-content: space-between;
+         padding-left: 2vw;
 }
 
 .home-container-contact {
@@ -134,7 +136,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 1vh;
 }
 
 .home-line{
@@ -161,6 +162,7 @@
     .home-phone-text{
         font-family: LoraTitle;
         font-size: 1.2vw;
+        margin: 0vh;
     }
 
     .home-profile-title {
@@ -179,7 +181,7 @@
     }
 
     .home-cursive-text{
-        font-size: 0.9vw;
+        font-size: 1vw;
         padding: 6vh;
         padding-top: 0vh;
         padding-bottom: 0vh;
@@ -200,7 +202,6 @@
         height: 2vw; 
     }
     .home-profile-image {
-        margin-top: 2vh;
         margin-bottom: 1vh;
         border-radius: 50%; 
         width: 6vw; 
@@ -217,10 +218,11 @@
     .home-phone-text{
         font-family: LoraTitle;
         font-size: 3vh;
+        margin: 0vh;
     }
 
-    .phone-div{
-        margin-bottom: 2vh;
+    .home-container {
+        padding-top: 16vh;
     }
 
     .home-profile-title {
@@ -257,7 +259,6 @@
         height: 4vh; 
     }
     .home-profile-image {
-        margin-top: 2vh;
         border-radius: 50%; 
         width: 20vh; 
         height: 20vh; 
