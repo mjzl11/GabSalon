@@ -1,0 +1,34 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: MontserratItalic;
+    src: url('../fonts/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: LoraTitle;
+    src: url('../fonts/Lora-BoldItalic.ttf') format('truetype');
+}
+
+body {
+    font-family: Montserrat; 
+    background-color: black ;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none; 
+}
